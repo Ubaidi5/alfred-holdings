@@ -1,0 +1,56 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Design Guidelines
+
+## Figma Design Link
+
+- Mobile: https://www.figma.com/design/ke9fscMk9ZqLCyP5mQp1Ka/Way-Around?node-id=43-10660&t=afCJbHj37k2MhJBF-4
+- Desktop: https://www.figma.com/design/ke9fscMk9ZqLCyP5mQp1Ka/Way-Around?node-id=43-7503&t=afCJbHj37k2MhJBF-4
+
+## Design System
+
+- Use a utility-first CSS approach with [Tailwind CSS](mdc:package.json)
+- Follow a consistent color palette defined in `global.css`
+- Maintain responsive design for all components: mobile, tablet, and desktop
+- Use the color schemes as defined in figma.
+- Use the following breakpoints:
+  - Mobile: < 640px
+  - Tablet: 640px - 1024px
+  - Desktop: > 1024px
+
+## Typography
+
+- Use a consistent type scale defined in the theme configuration
+- Font family: 
+  - Primary: Inter (sans-serif)
+- Font weights:
+  - Regular: 400
+  - Medium: 500
+  - Bold: 700
+- Heading sizes
+  - Desktop: 64px, 48px, 32px, 24px
+  - Mobile: 36px, 32px, 24px, 20px
+- Text sizes
+  - Desktop: 24px, 20px, 18px, 16px, 14px
+  - Mobile: 24px, 18px, 16px, 14px
+
+## Components Styling
+
+- Prefer Tailwind CSS utility classes for component styling
+- For complex components, use class variance authority for different variants
+- Use CSS variables for theme values that need runtime changes
+- Keep consistent spacing as defined in figma
+- Use shadows and elevation consistently according to the figma
+
+
+## Icons and Images
+
+- Download svg from figma and use it directly with svgr plugin
+- Use SVG icons whenever possible
+- Optimize images for web (compression, proper formats)
+- Implement responsive images with srcset when necessary
+- Use lazy loading for images below the fold
+

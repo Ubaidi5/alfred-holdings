@@ -1,0 +1,54 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Code Quality and Best Practices
+
+## General Principles
+
+- Write self-documenting code with descriptive naming
+- Keep functions and components small and focused on a single responsibility
+- Use proper error handling throughout the application
+
+## Code Style
+
+- Follow @ESLint rules
+- Use Prettier for consistent formatting
+- Keep indentation and formatting consistent
+
+
+## TypeScript Usage
+
+- Use proper TypeScript types for all variables, functions, and components
+- Avoid using `any` type; use proper type definitions or generics
+- Create dedicated type files for complex types and interfaces
+- Use TypeScript utility types where appropriate
+- Leverage TypeScript's strict mode
+
+## Performance Optimization
+
+- Use React.memo for expensive components that render often
+- Implement proper dependency arrays in useEffect, useMemo, and useCallback
+- Use virtualization for long lists
+- Optimize images and assets
+- Implement code splitting and lazy loading
+- Use Next.js static generation where appropriate
+- Minimize bundle size by importing only what is needed
+
+
+## Git Best Practices
+
+- Write clear, descriptive commit messages
+- Use feature branches and pull requests
+- Keep commits small and focused
+- Use conventional commit messages format
+- Review code before merging
+
+## Security Best Practices
+
+- Sanitize user inputs
+- Prevent XSS attacks
+- Keep dependencies up to date
+- Follow OWASP security guidelines
+

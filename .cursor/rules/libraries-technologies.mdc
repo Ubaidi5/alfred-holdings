@@ -1,0 +1,26 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Libraries and Technologies
+
+## Core Framework
+
+- [Next.js](mdc:next.config.ts) as the React framework
+- TypeScript for type safety
+- ESLint for code quality
+- Prettier for code formatting
+
+## UI and Styling
+
+- [Tailwind CSS](mdc:package.json) for utility-first styling
+- [Headless UI](mdc:package.json) for unstyled, accessible UI components
+- [React Icons](mdc:package.json) for icon library
+- [Framer Motion](mdc:package.json) for animations
+
+
+## Update
+
+- Regular dependency updates with dependabot
+

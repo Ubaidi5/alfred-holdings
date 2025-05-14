@@ -1,0 +1,36 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Component Structure Guidelines
+
+## Component Organization
+
+- Common Components should be organized in the `src/components` directory
+- UI components like button, text, heading etc should be stored in `src/components/ui` folder
+- Component name should be in PascalCase and every component should be exported as default
+- Component directories should contain:
+  - Main component file: `index.tsx`
+  - Types file (if needed): `types.ts`
+
+## Component Architecture
+
+- Use functional components with hooks instead of class components
+- Each component should have a clear single responsibility
+- Use TypeScript interfaces to define component props
+- Export default the main component
+- UI components should follow this structure 
+  - Variants using class variance authority
+  - Use tailwind classes for styles
+  - Types should be defined at the top and before component starts
+
+## Component Hierarchy
+
+- Create atomic design pattern with these levels:
+  - Atoms: Smallest UI elements (buttons, inputs, icons)
+  - Molecules: Simple combinations of atoms (form fields, card headers)
+  - Organisms: Complex UI components (forms, cards, navigation)
+  - Templates: Page layouts without specific content
+
+  - Pages: Complete page implementations

@@ -1,0 +1,62 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Project Structure
+
+## Directory Organization
+
+- `/src`: Main source code
+  - `/app`: Next.js App Router pages and layouts
+  - `/components`: Reusable React components
+  - `/lib`: Utility functions and helpers
+  - `/hooks`: Custom React hooks
+  - `/context`: React Context providers
+  - `/types`: TypeScript type definitions
+  - `/styles`: Global styles and theme configuration
+  - `/api`: API routes and service functions
+  - `/utils`: Utility functions
+  - `/constants`: Constant values and configuration
+- `/public`: Static assets (images, fonts, etc.)
+- `/tests`: Test utilities and setup
+- `/.github`: GitHub workflows and configuration
+
+## Naming Conventions
+
+- File and directory names:
+  - Components: PascalCase (e.g., `Button.tsx`, `UserProfile.tsx`)
+  - Hooks: camelCase with `use` prefix (e.g., `useAuth.ts`, `useLocalStorage.ts`)
+  - Utilities: camelCase (e.g., `formatDate.ts`, `calculateTotal.ts`)
+  - Pages: kebab-case for routes (e.g., `user-profile.tsx`, `about-us.tsx`)
+  - CSS modules: Same name as component with `.module.css` extension
+
+## Import Structure
+
+- Use absolute imports from src root using tsconfig paths
+- Group imports in the following order:
+  1. React and external libraries
+  2. Internal components
+  3. Hooks and utilities
+  4. Types
+  5. Styles
+
+## Next.js App Router Structure
+
+- Use the Next.js 15 App Router for routing
+- Organize routes in the `/app` directory
+- Use layout.tsx files for shared layouts
+- Use loading.tsx for loading states
+- Use error.tsx for error boundaries
+- Follow Next.js best practices for data fetching and rendering
+
+## Component Organization
+
+- Group related components in subdirectories
+- Follow the Atomic Design pattern:
+  - `/components/atoms`: Basic building blocks
+  - `/components/molecules`: Combinations of atoms
+  - `/components/organisms`: Complex UI sections
+  - `/components/templates`: Page layouts
+- Create an index.ts barrel file in component directories for easier imports
+
