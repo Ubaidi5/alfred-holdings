@@ -23,11 +23,11 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
     <footer className={cn("bg-[#132B39] text-white py-20", className)}>
       <Container>
         {/* Main footer content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+        <div className="flex flex-col md:flex-row justify-between gap-6">
           {/* Column 1 - Logo and description */}
           <div className="flex flex-col gap-6">
             <div className="flex items-center gap-4">
-              <div className="h-10 w-32 bg-white rounded flex items-center justify-center">
+              <div className="w-[101px] h-[34px] p-0.5 bg-white rounded flex items-center justify-center">
                 <Image
                   src="/asstes/images/alfred-holdings.png"
                   alt="Alfred Holdings"
@@ -35,7 +35,9 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
                   height={34}
                 />
               </div>
-              <span className="text-2xl text-white">| GCC Growth Leader</span>
+              <span className="text-xl md:text-2xl text-white">
+                | GCC Growth Leader
+              </span>
             </div>
             <p className="text-[#DFE3E7] text-sm max-w-[600px]">
               Alfred Holdings is a Dubai-based investment group behind
@@ -45,9 +47,9 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
           </div>
 
           {/* Column 2 - Links and social */}
-          <div className="space-y-8">
+          <div className="flex flex-col-reverse md:flex-col gap-12 md:gap-6">
             {/* Navigation Links */}
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-y-2">
+            <div className="flex flex-col md:flex-row [&>a]:w-[123px]">
               <Link
                 href="/about-us"
                 className="text-[#EEF7FC] font-semibold text-sm py-2"
@@ -134,11 +136,11 @@ const Footer: React.FC<FooterProps> = ({ className }) => {
         <div className="my-12 border-t border-[#B6DEF4] border-opacity-60"></div>
 
         {/* Copyright and legal links */}
-        <div className="flex flex-col md:flex-row justify-between gap-6">
+        <div className="flex flex-col-reverse md:flex-row justify-between gap-8">
           <div className="text-[#DFE3E7] text-sm">
             © 2025 Alfred Investments LLC. All rights reserved.
           </div>
-          <div className="flex gap-6">
+          <div className="flex flex-col md:flex-row gap-4">
             <Link href="/privacy-policy" className="text-[#DFE3E7] text-sm">
               Privacy Policy
             </Link>
