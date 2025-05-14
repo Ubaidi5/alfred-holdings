@@ -6,6 +6,7 @@ import Button from "../Button";
 import { cn } from "@/utils/cn";
 import MobileNav from "./MobileNav";
 import Image from "@/components/ui/image";
+import MenuIcon from "@public/assets/icons/menu.svg";
 
 interface NavigationProps {
   className?: string;
@@ -19,7 +20,7 @@ const Navigation = ({ className }: NavigationProps) => {
       <header className="relative flex justify-between items-center max-w-[1400px] mx-auto">
         <div
           className={cn(
-            "w-full max-w-[180px] md:w-full md:max-w-[706px] mx-auto md:m-0 flex items-center justify-between py-2 px-4 md:p-2 md:pl-5 md:pr-2 rounded-full border border-[#4AACE3] bg-white",
+            "w-max md:w-full md:max-w-[706px] mx-0 md:mx-auto flex items-center justify-between py-2 px-4 md:p-2 md:pl-5 md:pr-2 rounded-full border border-[#4AACE3] bg-white",
             className
           )}
         >
@@ -66,26 +67,12 @@ const Navigation = ({ className }: NavigationProps) => {
           </Button>
         </div>
 
-        <button
-          className="md:hidden absolute right-4 top-1/2 transform -translate-y-1/2 text-white"
+        <div
+          className="md:hidden w-12 h-12 flex items-center justify-center cursor-pointer bg-white rounded-full"
           onClick={() => setMobileMenuOpen(true)}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
-        </button>
+          <MenuIcon className="w-6 h-6" />
+        </div>
       </header>
 
       <MobileNav
