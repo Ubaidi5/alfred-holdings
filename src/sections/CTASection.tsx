@@ -21,8 +21,9 @@ const CTASection: React.FC = () => {
             <div className="flex flex-col gap-4 pb-8 border-b border-[#B6DEF4] border-opacity-50">
               <div className="inline">
                 <h2 className="text-4xl md:text-6xl text-white font-normal leading-tight tracking-[-0.06em]">
-                  Let&apos;s Build the Future, Together{" "}
-                  <RocketIcon className="w-[57px] h-[57px]" />
+                  Let&apos;s <span className="text-secondary">Build</span> the
+                  Future, Together{" "}
+                  <RocketIcon className="w-[32px] h-[32px] md:w-[57px] md:h-[57px] inline-block ml-2" />
                 </h2>
               </div>
               <p className="text-white text-base md:text-lg font-medium">
@@ -52,7 +53,7 @@ const CTASection: React.FC = () => {
           <Image
             src="/assets/images/alfred-cta-image.png"
             alt="Business person"
-            className="w-auto h-[528px] object-contain"
+            className="w-auto h-[318px] md:h-[528px] object-contain"
           />
         </div>
       </Container>
