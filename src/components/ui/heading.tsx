@@ -9,7 +9,7 @@ const headingVariants = cva("w-fit", {
   variants: {
     as: {
       default:
-        "text-secondary-foreground font-normal text-[32px] leading-10.5 md:text-5xl md:leading-14",
+        "text-secondary font-normal text-[32px] leading-10.5 md:text-5xl md:leading-14",
     },
   },
   defaultVariants: {
