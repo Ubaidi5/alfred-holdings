@@ -9,9 +9,9 @@ const HeroSection: React.FC = () => {
   return (
     <section className="relative bg-[#4AACE3] overflow-hidden">
       <div className="pt-4 pb-4">
-        <Container>
+        <div className="fixed top-4 z-100 left-1/2 transform -translate-x-1/2">
           <Navigation />
-        </Container>
+        </div>
       </div>
       <Container className="pt-8 md:pt-16 lg:pt-20 pb-0 flex flex-col items-center">
         <div className="text-center mx-auto mb-5 md:mb-6">
@@ -38,6 +38,7 @@ const HeroSection: React.FC = () => {
             alt="Alfred Holdings Mascot with Dubai Skyline"
             className="w-full h-auto object-contain"
             priority
+            quality={100}
           />
         </div>
       </div>
