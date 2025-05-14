@@ -19,7 +19,7 @@ const Navigation = ({ className }: NavigationProps) => {
       <header className="relative flex justify-between items-center max-w-[1400px] mx-auto">
         <div
           className={cn(
-            "w-full max-w-[180px] md:max-w-full md:w-full md:max-w-[706px] mx-auto md:m-0 md:mx-auto flex items-center justify-between py-2 px-4 md:p-2 md:pr-4 md:pl-5 md:pr-2 rounded-full border border-[#4AACE3] bg-white",
+            "w-full max-w-[180px] md:w-full md:max-w-[706px] mx-auto md:m-0 flex items-center justify-between py-2 px-4 md:p-2 md:pl-5 md:pr-2 rounded-full border border-[#4AACE3] bg-white",
             className
           )}
         >

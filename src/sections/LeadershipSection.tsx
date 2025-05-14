@@ -1,5 +1,3 @@
-"use client";
-
 import React from "react";
 import Image from "@/components/ui/image";
 import Container from "@/components/ui/container";
@@ -16,7 +14,7 @@ const LeadershipSection: React.FC = () => {
   return (
     <section className="bg-[#132B39] relative overflow-hidden">
       <Container className="py-25 md:py-30 relative z-10">
-        <Heading className="block md:hidden mb-10">
+        <Heading className="text-white block md:hidden mb-10">
           Message from the <span className="text-primary">Chairman</span>
         </Heading>
 
@@ -28,7 +26,7 @@ const LeadershipSection: React.FC = () => {
           />
 
           <div className="w-full md:max-w-[713px] flex flex-col gap-3 md:gap-6">
-            <Heading className="hidden md:block">
+            <Heading className="text-white hidden md:block">
               Message from the <span className="text-primary">Chairman</span>
             </Heading>
 
